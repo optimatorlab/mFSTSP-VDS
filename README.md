@@ -23,3 +23,9 @@ Following is the pseudo-code for Phase 3 of the heuristic, which is detailed in 
 ## Local Search:
 The pseudo-code corresponding to local search part of the heuristic is provided below, the details of which can be found in Section 4.5 of the paper.
 ![alt text](https://github.com/optimatorlab/mFSTSP-VDS/blob/murray/LocalSearch.png)
+
+----
+
+## Contact Info
+
+For any queries, please send an email to r28@buffalo.edu.
