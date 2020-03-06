@@ -3,7 +3,7 @@
 This repository provides a collection of test problems, as well as the soucre code to solve mFSTSP-VDS instances. The mFSTSP-VDS is a variant of the TSP in which multiple UAVs coordinate with a truck to deliver parcels in the minimum time, and UAVs can fly at any speeds below their maximum speeds.
 
 The repository accompanies the following paper, which is currently under review:
-> R. Raj and C. Murray. Fly slower, deliver faster: The multiple flying sidekicks traveling salesman problem with variable drone speeds. Available at SSRN: _______________________________________________
+> R. Raj and C. Murray. Fly slower, deliver faster: The multiple flying sidekicks traveling salesman problem with variable drone speeds. Available at SSRN: https://ssrn.com/abstract=3549622
 
 The paper provides details on the mFSTSP-VDS definition, and a heuristic as a solution approach. 
 
