@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_f9b5b218c0be4709ab43a0f2be9aef4f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f9b5b218c0be4709ab43a0f2be9aef4f" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_f9b5b218c0be4709ab43a0f2be9aef4f = L.map(
+                                  'map_f9b5b218c0be4709ab43a0f2be9aef4f',
+                                  {center: [47.5906,-122.2555],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_d19192bd633044e891cc5c20caa3d197 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+
+        
+    
+
+            var marker_887a2b7be70e4657b598b354089cb009 = L.marker(
+                [47.5099316083,-122.348845961],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_3e729dba9aa54a9192f5077006b0ee36 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_887a2b7be70e4657b598b354089cb009.setIcon(icon_3e729dba9aa54a9192f5077006b0ee36);
+            
+    
+            var popup_7ba6400f32dd4e8681a09c649b2e6bfe = L.popup({maxWidth: '300'});
+
+            
+                var html_6649ff4912504cf4b94d0fe5ac7c7610 = $('<div id="html_6649ff4912504cf4b94d0fe5ac7c7610" style="width: 100.0%; height: 100.0%;">Depot (Node 0)</div>')[0];
+                popup_7ba6400f32dd4e8681a09c649b2e6bfe.setContent(html_6649ff4912504cf4b94d0fe5ac7c7610);
+            
+
+            marker_887a2b7be70e4657b598b354089cb009.bindPopup(popup_7ba6400f32dd4e8681a09c649b2e6bfe);
+
+            
+        
+    
+
+            var marker_a110afef0a4c4d1eae9e7133d7875377 = L.marker(
+                [47.6663058702,-122.160795583],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_3764d279240b483ea0de0e95ea696936 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a110afef0a4c4d1eae9e7133d7875377.setIcon(icon_3764d279240b483ea0de0e95ea696936);
+            
+    
+            var popup_07f9b46d9f5246c5af1cdd73cb077743 = L.popup({maxWidth: '300'});
+
+            
+                var html_bbc65a8da48b43f9bdce31b17c42791e = $('<div id="html_bbc65a8da48b43f9bdce31b17c42791e" style="width: 100.0%; height: 100.0%;">Droneable Customer 1.  Weight: 5.0.</div>')[0];
+                popup_07f9b46d9f5246c5af1cdd73cb077743.setContent(html_bbc65a8da48b43f9bdce31b17c42791e);
+            
+
+            marker_a110afef0a4c4d1eae9e7133d7875377.bindPopup(popup_07f9b46d9f5246c5af1cdd73cb077743);
+
+            
+        
+    
+
+            var marker_f5d4fbbe6b0841429fc098632217fd08 = L.marker(
+                [47.6241865156,-122.316747294],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_60295fd8db6342b2910e80e78243df87 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f5d4fbbe6b0841429fc098632217fd08.setIcon(icon_60295fd8db6342b2910e80e78243df87);
+            
+    
+            var popup_aaa3f74db1344ba5b5e24b77bc0e9eff = L.popup({maxWidth: '300'});
+
+            
+                var html_2f95bbca6d4e4fc886bbae405ba59496 = $('<div id="html_2f95bbca6d4e4fc886bbae405ba59496" style="width: 100.0%; height: 100.0%;">Droneable Customer 2.  Weight: 2.0.</div>')[0];
+                popup_aaa3f74db1344ba5b5e24b77bc0e9eff.setContent(html_2f95bbca6d4e4fc886bbae405ba59496);
+            
+
+            marker_f5d4fbbe6b0841429fc098632217fd08.bindPopup(popup_aaa3f74db1344ba5b5e24b77bc0e9eff);
+
+            
+        
+    
+
+            var marker_e61863e99b0b4a31848486adf02683f7 = L.marker(
+                [47.5920451278,-122.131368076],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_fbd82cc8aa044b8988d80cf5d26e18ef = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e61863e99b0b4a31848486adf02683f7.setIcon(icon_fbd82cc8aa044b8988d80cf5d26e18ef);
+            
+    
+            var popup_787887bebd1748c3b1d91f5323b8d9d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_b1a72dbfa81a457a91a52a42ac366bdc = $('<div id="html_b1a72dbfa81a457a91a52a42ac366bdc" style="width: 100.0%; height: 100.0%;">Droneable Customer 3.  Weight: 4.0.</div>')[0];
+                popup_787887bebd1748c3b1d91f5323b8d9d0.setContent(html_b1a72dbfa81a457a91a52a42ac366bdc);
+            
+
+            marker_e61863e99b0b4a31848486adf02683f7.bindPopup(popup_787887bebd1748c3b1d91f5323b8d9d0);
+
+            
+        
+    
+
+            var marker_5d3c8f8e98b6470da32aed0e7717a5e6 = L.marker(
+                [47.4791807474,-122.12891904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_8446dc812fde4befa4bf7ceaf794fbee = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5d3c8f8e98b6470da32aed0e7717a5e6.setIcon(icon_8446dc812fde4befa4bf7ceaf794fbee);
+            
+    
+            var popup_cb70be8b1c4f43528f2bfb6f04180442 = L.popup({maxWidth: '300'});
+
+            
+                var html_1de19e4f1d124d3385baec7d9cc4e11a = $('<div id="html_1de19e4f1d124d3385baec7d9cc4e11a" style="width: 100.0%; height: 100.0%;">Droneable Customer 4.  Weight: 3.0.</div>')[0];
+                popup_cb70be8b1c4f43528f2bfb6f04180442.setContent(html_1de19e4f1d124d3385baec7d9cc4e11a);
+            
+
+            marker_5d3c8f8e98b6470da32aed0e7717a5e6.bindPopup(popup_cb70be8b1c4f43528f2bfb6f04180442);
+
+            
+        
+    
+
+            var marker_f3b497f39707418fa7380396d04a304c = L.marker(
+                [47.5793286278,-122.391331528],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_534ac44dda1f4faa9cb232ad666f0d0a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f3b497f39707418fa7380396d04a304c.setIcon(icon_534ac44dda1f4faa9cb232ad666f0d0a);
+            
+    
+            var popup_6d174b5d00494cffb4678316fa053c88 = L.popup({maxWidth: '300'});
+
+            
+                var html_9ab1d6e333d14e6da17eca0820cc0ca1 = $('<div id="html_9ab1d6e333d14e6da17eca0820cc0ca1" style="width: 100.0%; height: 100.0%;">Droneable Customer 5.  Weight: 1.0.</div>')[0];
+                popup_6d174b5d00494cffb4678316fa053c88.setContent(html_9ab1d6e333d14e6da17eca0820cc0ca1);
+            
+
+            marker_f3b497f39707418fa7380396d04a304c.bindPopup(popup_6d174b5d00494cffb4678316fa053c88);
+
+            
+        
+    
+
+            var marker_021e221330b6455591e47593a3ec5c6d = L.marker(
+                [47.5210702587,-122.374672657],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_eec09556897d40c59a32f9951d3d7dc8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_021e221330b6455591e47593a3ec5c6d.setIcon(icon_eec09556897d40c59a32f9951d3d7dc8);
+            
+    
+            var popup_8fa1c5c2bd12430ba7892862407d58d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_21ea012060a248aabaab9c4a9aa8b286 = $('<div id="html_21ea012060a248aabaab9c4a9aa8b286" style="width: 100.0%; height: 100.0%;">Droneable Customer 6.  Weight: 1.0.</div>')[0];
+                popup_8fa1c5c2bd12430ba7892862407d58d7.setContent(html_21ea012060a248aabaab9c4a9aa8b286);
+            
+
+            marker_021e221330b6455591e47593a3ec5c6d.bindPopup(popup_8fa1c5c2bd12430ba7892862407d58d7);
+
+            
+        
+    
+
+            var marker_c9e41109e1414c778010ffc82c7ca4be = L.marker(
+                [47.6886696775,-122.14282505],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_63a3ca8666254ff3a30963b994235298 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c9e41109e1414c778010ffc82c7ca4be.setIcon(icon_63a3ca8666254ff3a30963b994235298);
+            
+    
+            var popup_b07679e865304f3cb8e7c1b01b2ddf58 = L.popup({maxWidth: '300'});
+
+            
+                var html_861a79ee2d494439bd211cd8c88779d3 = $('<div id="html_861a79ee2d494439bd211cd8c88779d3" style="width: 100.0%; height: 100.0%;">Droneable Customer 7.  Weight: 3.0.</div>')[0];
+                popup_b07679e865304f3cb8e7c1b01b2ddf58.setContent(html_861a79ee2d494439bd211cd8c88779d3);
+            
+
+            marker_c9e41109e1414c778010ffc82c7ca4be.bindPopup(popup_b07679e865304f3cb8e7c1b01b2ddf58);
+
+            
+        
+    
+
+            var marker_3a12965eef814cce974909036a402b05 = L.marker(
+                [47.6323674674,-122.295968604],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_8547af8e4b5143ffbbb6b57f5310d360 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3a12965eef814cce974909036a402b05.setIcon(icon_8547af8e4b5143ffbbb6b57f5310d360);
+            
+    
+            var popup_acdbf202ad534a6ca551c1a4bd6e22b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_57b7587a8861461b9d92d77bd5223dd1 = $('<div id="html_57b7587a8861461b9d92d77bd5223dd1" style="width: 100.0%; height: 100.0%;">Droneable Customer 8.  Weight: 1.0.</div>')[0];
+                popup_acdbf202ad534a6ca551c1a4bd6e22b2.setContent(html_57b7587a8861461b9d92d77bd5223dd1);
+            
+
+            marker_3a12965eef814cce974909036a402b05.bindPopup(popup_acdbf202ad534a6ca551c1a4bd6e22b2);
+
+            
+        
+    
+
+            var marker_2deb65353cf64adfbe34b98cc797a1cf = L.marker(
+                [47.6136911214,-122.143089457],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_9b49f8f553ba4d928e2ace0901d92eff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2deb65353cf64adfbe34b98cc797a1cf.setIcon(icon_9b49f8f553ba4d928e2ace0901d92eff);
+            
+    
+            var popup_1d7fd11f3af64b1299abdb1e9d736ed7 = L.popup({maxWidth: '300'});
+
+            
+                var html_25e2bcc7eb4146dcbee88962075e642f = $('<div id="html_25e2bcc7eb4146dcbee88962075e642f" style="width: 100.0%; height: 100.0%;">Truck-only Customer 9.  Weight: 100.0.</div>')[0];
+                popup_1d7fd11f3af64b1299abdb1e9d736ed7.setContent(html_25e2bcc7eb4146dcbee88962075e642f);
+            
+
+            marker_2deb65353cf64adfbe34b98cc797a1cf.bindPopup(popup_1d7fd11f3af64b1299abdb1e9d736ed7);
+
+            
+        
+    
+
+            var marker_577e72f669c24edeadb339ad7a0c6691 = L.marker(
+                [47.6117485196,-122.308864862],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_dfd4bd7bd8be499185fea2da15e9e2d7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_577e72f669c24edeadb339ad7a0c6691.setIcon(icon_dfd4bd7bd8be499185fea2da15e9e2d7);
+            
+    
+            var popup_2dafbca055d44e33b7232bec7e432ffb = L.popup({maxWidth: '300'});
+
+            
+                var html_1b07bd966d6045f2a486ee3fadd902fe = $('<div id="html_1b07bd966d6045f2a486ee3fadd902fe" style="width: 100.0%; height: 100.0%;">Droneable Customer 10.  Weight: 2.0.</div>')[0];
+                popup_2dafbca055d44e33b7232bec7e432ffb.setContent(html_1b07bd966d6045f2a486ee3fadd902fe);
+            
+
+            marker_577e72f669c24edeadb339ad7a0c6691.bindPopup(popup_2dafbca055d44e33b7232bec7e432ffb);
+
+            
+        
+    
+
+            var marker_4e11bc967b6642c7ab27a37b3ad1d2cf = L.marker(
+                [47.5434320312,-122.233957122],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_934c4be0dffb4eb391d765c885547c71 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4e11bc967b6642c7ab27a37b3ad1d2cf.setIcon(icon_934c4be0dffb4eb391d765c885547c71);
+            
+    
+            var popup_42e05533be474a1da5a123150a235449 = L.popup({maxWidth: '300'});
+
+            
+                var html_5e5cdc0e1b6f42c6a2dd0d2709b29d7c = $('<div id="html_5e5cdc0e1b6f42c6a2dd0d2709b29d7c" style="width: 100.0%; height: 100.0%;">Droneable Customer 11.  Weight: 2.0.</div>')[0];
+                popup_42e05533be474a1da5a123150a235449.setContent(html_5e5cdc0e1b6f42c6a2dd0d2709b29d7c);
+            
+
+            marker_4e11bc967b6642c7ab27a37b3ad1d2cf.bindPopup(popup_42e05533be474a1da5a123150a235449);
+
+            
+        
+    
+
+            var marker_a0a66e59064f448f8d56d86cfca1eb80 = L.marker(
+                [47.5548685609,-122.251614119],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_548dcfdcfb4449c8817d14174292124c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0a66e59064f448f8d56d86cfca1eb80.setIcon(icon_548dcfdcfb4449c8817d14174292124c);
+            
+    
+            var popup_df807fdc81964efa856b5dacfc9cdbbf = L.popup({maxWidth: '300'});
+
+            
+                var html_994cbe33d57748a2a16c6b8e5be3cf4a = $('<div id="html_994cbe33d57748a2a16c6b8e5be3cf4a" style="width: 100.0%; height: 100.0%;">Droneable Customer 12.  Weight: 3.0.</div>')[0];
+                popup_df807fdc81964efa856b5dacfc9cdbbf.setContent(html_994cbe33d57748a2a16c6b8e5be3cf4a);
+            
+
+            marker_a0a66e59064f448f8d56d86cfca1eb80.bindPopup(popup_df807fdc81964efa856b5dacfc9cdbbf);
+
+            
+        
+    
+
+            var marker_c72a466497fe4f00b376b2f6a50e3bb5 = L.marker(
+                [47.4834919389,-122.355021506],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_62cd0024ac8f42cbb57cd6e7d24ae04f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c72a466497fe4f00b376b2f6a50e3bb5.setIcon(icon_62cd0024ac8f42cbb57cd6e7d24ae04f);
+            
+    
+            var popup_5aa568efc6bf41ca8aba0ac0d2835603 = L.popup({maxWidth: '300'});
+
+            
+                var html_d376650f53594da8953f42b914c4fc58 = $('<div id="html_d376650f53594da8953f42b914c4fc58" style="width: 100.0%; height: 100.0%;">Droneable Customer 13.  Weight: 1.0.</div>')[0];
+                popup_5aa568efc6bf41ca8aba0ac0d2835603.setContent(html_d376650f53594da8953f42b914c4fc58);
+            
+
+            marker_c72a466497fe4f00b376b2f6a50e3bb5.bindPopup(popup_5aa568efc6bf41ca8aba0ac0d2835603);
+
+            
+        
+    
+
+            var marker_1cb4bbfc048e4a56a3857c0735596dc0 = L.marker(
+                [47.6968834704,-122.14494968],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_93d29e04a2634a19b5ca6e92d85c6bf5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1cb4bbfc048e4a56a3857c0735596dc0.setIcon(icon_93d29e04a2634a19b5ca6e92d85c6bf5);
+            
+    
+            var popup_7c6689d8159b428a851798ad13a1b647 = L.popup({maxWidth: '300'});
+
+            
+                var html_55f7f51092b8492080d458401f6e48ab = $('<div id="html_55f7f51092b8492080d458401f6e48ab" style="width: 100.0%; height: 100.0%;">Droneable Customer 14.  Weight: 3.0.</div>')[0];
+                popup_7c6689d8159b428a851798ad13a1b647.setContent(html_55f7f51092b8492080d458401f6e48ab);
+            
+
+            marker_1cb4bbfc048e4a56a3857c0735596dc0.bindPopup(popup_7c6689d8159b428a851798ad13a1b647);
+
+            
+        
+    
+
+            var marker_992c170309a64ec29bce61d111436729 = L.marker(
+                [47.488579827,-122.177349296],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_8da9d7d96ad04eb788ee3c70a34c899a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_992c170309a64ec29bce61d111436729.setIcon(icon_8da9d7d96ad04eb788ee3c70a34c899a);
+            
+    
+            var popup_5f2da455344d4a40b92922986d56c348 = L.popup({maxWidth: '300'});
+
+            
+                var html_3b0dc58cce3e4c6992cb5952bb20f1e2 = $('<div id="html_3b0dc58cce3e4c6992cb5952bb20f1e2" style="width: 100.0%; height: 100.0%;">Droneable Customer 15.  Weight: 2.0.</div>')[0];
+                popup_5f2da455344d4a40b92922986d56c348.setContent(html_3b0dc58cce3e4c6992cb5952bb20f1e2);
+            
+
+            marker_992c170309a64ec29bce61d111436729.bindPopup(popup_5f2da455344d4a40b92922986d56c348);
+
+            
+        
+    
+
+            var marker_79467f6da6254e8ebd5d4270ebe0258a = L.marker(
+                [47.4899792548,-122.205610976],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_023a5ba6f78842eba974be32b16168b9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_79467f6da6254e8ebd5d4270ebe0258a.setIcon(icon_023a5ba6f78842eba974be32b16168b9);
+            
+    
+            var popup_f15fb386b96740fbb80ede61ff9aa721 = L.popup({maxWidth: '300'});
+
+            
+                var html_3ff4a128e7114b5a8a2d4b20c32c1e23 = $('<div id="html_3ff4a128e7114b5a8a2d4b20c32c1e23" style="width: 100.0%; height: 100.0%;">Droneable Customer 16.  Weight: 1.0.</div>')[0];
+                popup_f15fb386b96740fbb80ede61ff9aa721.setContent(html_3ff4a128e7114b5a8a2d4b20c32c1e23);
+            
+
+            marker_79467f6da6254e8ebd5d4270ebe0258a.bindPopup(popup_f15fb386b96740fbb80ede61ff9aa721);
+
+            
+        
+    
+
+            var marker_2b8205eb2b3e4443a0aad6141fbacf2a = L.marker(
+                [47.5889322399,-122.390345136],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_836753a2c49f4c6cbf83b2c9944b5c7f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2b8205eb2b3e4443a0aad6141fbacf2a.setIcon(icon_836753a2c49f4c6cbf83b2c9944b5c7f);
+            
+    
+            var popup_0b54c050e382446eb0d40b2ad7dc08ee = L.popup({maxWidth: '300'});
+
+            
+                var html_671ca494ddb942d3ad1cda538e0cc765 = $('<div id="html_671ca494ddb942d3ad1cda538e0cc765" style="width: 100.0%; height: 100.0%;">Droneable Customer 17.  Weight: 3.0.</div>')[0];
+                popup_0b54c050e382446eb0d40b2ad7dc08ee.setContent(html_671ca494ddb942d3ad1cda538e0cc765);
+            
+
+            marker_2b8205eb2b3e4443a0aad6141fbacf2a.bindPopup(popup_0b54c050e382446eb0d40b2ad7dc08ee);
+
+            
+        
+    
+
+            var marker_cd8de82e0cf4419d822df485ab042dbd = L.marker(
+                [47.6188841707,-122.329113106],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_3d5caf3601034b9195044dac7b0559a9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cd8de82e0cf4419d822df485ab042dbd.setIcon(icon_3d5caf3601034b9195044dac7b0559a9);
+            
+    
+            var popup_3a57c39694b34cefbbc024183a313ab9 = L.popup({maxWidth: '300'});
+
+            
+                var html_d609930e05ed42f9ae3b32d827861172 = $('<div id="html_d609930e05ed42f9ae3b32d827861172" style="width: 100.0%; height: 100.0%;">Droneable Customer 18.  Weight: 4.0.</div>')[0];
+                popup_3a57c39694b34cefbbc024183a313ab9.setContent(html_d609930e05ed42f9ae3b32d827861172);
+            
+
+            marker_cd8de82e0cf4419d822df485ab042dbd.bindPopup(popup_3a57c39694b34cefbbc024183a313ab9);
+
+            
+        
+    
+
+            var marker_e095475dc2b846cf85dcd627233c57b5 = L.marker(
+                [47.6082862016,-122.197847931],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_96a2dde7057649db9f201f26dad65f46 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e095475dc2b846cf85dcd627233c57b5.setIcon(icon_96a2dde7057649db9f201f26dad65f46);
+            
+    
+            var popup_746a52c7887f4cafaa8e514e3a768d62 = L.popup({maxWidth: '300'});
+
+            
+                var html_19855d03f59745aead5fffe215131b7f = $('<div id="html_19855d03f59745aead5fffe215131b7f" style="width: 100.0%; height: 100.0%;">Droneable Customer 19.  Weight: 1.0.</div>')[0];
+                popup_746a52c7887f4cafaa8e514e3a768d62.setContent(html_19855d03f59745aead5fffe215131b7f);
+            
+
+            marker_e095475dc2b846cf85dcd627233c57b5.bindPopup(popup_746a52c7887f4cafaa8e514e3a768d62);
+
+            
+        
+    
+
+            var marker_cff8fc8f67ff4de8aef9833b0fd32d8d = L.marker(
+                [47.6171502664,-122.153638919],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_dcdae83033444a2eb31b4c8740c5ff62 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cff8fc8f67ff4de8aef9833b0fd32d8d.setIcon(icon_dcdae83033444a2eb31b4c8740c5ff62);
+            
+    
+            var popup_bdd41516fdc84d84b0574c8c69d9c4e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_001b1735e36a46dda03aecf5ae14d570 = $('<div id="html_001b1735e36a46dda03aecf5ae14d570" style="width: 100.0%; height: 100.0%;">Droneable Customer 20.  Weight: 4.0.</div>')[0];
+                popup_bdd41516fdc84d84b0574c8c69d9c4e9.setContent(html_001b1735e36a46dda03aecf5ae14d570);
+            
+
+            marker_cff8fc8f67ff4de8aef9833b0fd32d8d.bindPopup(popup_bdd41516fdc84d84b0574c8c69d9c4e9);
+
+            
+        
+    
+
+            var marker_b765aa2a61f5423385c2cd8f74e85202 = L.marker(
+                [47.6090164562,-122.303744543],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_74fcd3f77e6e4b0894d1ef84d50d70c8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b765aa2a61f5423385c2cd8f74e85202.setIcon(icon_74fcd3f77e6e4b0894d1ef84d50d70c8);
+            
+    
+            var popup_575be842fa3d4ae4833e53e4c5a27f28 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a38ce214a634c56bbce3647d80bd50a = $('<div id="html_8a38ce214a634c56bbce3647d80bd50a" style="width: 100.0%; height: 100.0%;">Truck-only Customer 21.  Weight: 100.0.</div>')[0];
+                popup_575be842fa3d4ae4833e53e4c5a27f28.setContent(html_8a38ce214a634c56bbce3647d80bd50a);
+            
+
+            marker_b765aa2a61f5423385c2cd8f74e85202.bindPopup(popup_575be842fa3d4ae4833e53e4c5a27f28);
+
+            
+        
+    
+
+            var marker_2c9f21cccd9f46f9a2f7910cb678ff7a = L.marker(
+                [47.670113595,-122.39287751],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_cb271651ebfd4376820a5dbb332c91b7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2c9f21cccd9f46f9a2f7910cb678ff7a.setIcon(icon_cb271651ebfd4376820a5dbb332c91b7);
+            
+    
+            var popup_0760a4d53de04f7397b87b77bafdd4ca = L.popup({maxWidth: '300'});
+
+            
+                var html_d1efda737bc0490da1cf7cce7a851ff0 = $('<div id="html_d1efda737bc0490da1cf7cce7a851ff0" style="width: 100.0%; height: 100.0%;">Droneable Customer 22.  Weight: 1.0.</div>')[0];
+                popup_0760a4d53de04f7397b87b77bafdd4ca.setContent(html_d1efda737bc0490da1cf7cce7a851ff0);
+            
+
+            marker_2c9f21cccd9f46f9a2f7910cb678ff7a.bindPopup(popup_0760a4d53de04f7397b87b77bafdd4ca);
+
+            
+        
+    
+
+            var marker_117d5e1fe97a4511aed25af79060c0f5 = L.marker(
+                [47.6263706004,-122.356624761],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_9aeb2d0b5a754e08afa8295028ad2124 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_117d5e1fe97a4511aed25af79060c0f5.setIcon(icon_9aeb2d0b5a754e08afa8295028ad2124);
+            
+    
+            var popup_534770dc6b9848279395d4c5bdabdfa3 = L.popup({maxWidth: '300'});
+
+            
+                var html_ae29ce0b5bd045b4b6b43bb44aa2f063 = $('<div id="html_ae29ce0b5bd045b4b6b43bb44aa2f063" style="width: 100.0%; height: 100.0%;">Droneable Customer 23.  Weight: 4.0.</div>')[0];
+                popup_534770dc6b9848279395d4c5bdabdfa3.setContent(html_ae29ce0b5bd045b4b6b43bb44aa2f063);
+            
+
+            marker_117d5e1fe97a4511aed25af79060c0f5.bindPopup(popup_534770dc6b9848279395d4c5bdabdfa3);
+
+            
+        
+    
+
+            var marker_f83aef4dc0e746d99281803063ee1964 = L.marker(
+                [47.6927576197,-122.35732454],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_463913987fce4f97b1ec64351d6ba6c0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f83aef4dc0e746d99281803063ee1964.setIcon(icon_463913987fce4f97b1ec64351d6ba6c0);
+            
+    
+            var popup_6191a9f96036434ca57a6546c29bdbce = L.popup({maxWidth: '300'});
+
+            
+                var html_53f312f41ef244dfa42dc403101a8037 = $('<div id="html_53f312f41ef244dfa42dc403101a8037" style="width: 100.0%; height: 100.0%;">Droneable Customer 24.  Weight: 5.0.</div>')[0];
+                popup_6191a9f96036434ca57a6546c29bdbce.setContent(html_53f312f41ef244dfa42dc403101a8037);
+            
+
+            marker_f83aef4dc0e746d99281803063ee1964.bindPopup(popup_6191a9f96036434ca57a6546c29bdbce);
+
+            
+        
+    
+
+            var marker_6e0ab1e81b804581a18b26569e4e42fd = L.marker(
+                [47.585639944,-122.306199468],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_572dba7a53e54b549ee7a2cdd917edfa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e0ab1e81b804581a18b26569e4e42fd.setIcon(icon_572dba7a53e54b549ee7a2cdd917edfa);
+            
+    
+            var popup_9bbe8624cef8465498a643af5b76d407 = L.popup({maxWidth: '300'});
+
+            
+                var html_8188108a3d6844bfb1121bb6f937785f = $('<div id="html_8188108a3d6844bfb1121bb6f937785f" style="width: 100.0%; height: 100.0%;">Droneable Customer 25.  Weight: 1.0.</div>')[0];
+                popup_9bbe8624cef8465498a643af5b76d407.setContent(html_8188108a3d6844bfb1121bb6f937785f);
+            
+
+            marker_6e0ab1e81b804581a18b26569e4e42fd.bindPopup(popup_9bbe8624cef8465498a643af5b76d407);
+
+            
+        
+    
+
+            var marker_a4c16ec98c9d43129f03d76aee18b763 = L.marker(
+                [47.4986556549,-122.20573008],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_ed45a14cbdc94818a4e69d433b4ab349 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a4c16ec98c9d43129f03d76aee18b763.setIcon(icon_ed45a14cbdc94818a4e69d433b4ab349);
+            
+    
+            var popup_39fa63f4fa614a8da4caf83d7864a2ba = L.popup({maxWidth: '300'});
+
+            
+                var html_d416ebefad974647bb72463e198947f7 = $('<div id="html_d416ebefad974647bb72463e198947f7" style="width: 100.0%; height: 100.0%;">Truck-only Customer 26.  Weight: 100.0.</div>')[0];
+                popup_39fa63f4fa614a8da4caf83d7864a2ba.setContent(html_d416ebefad974647bb72463e198947f7);
+            
+
+            marker_a4c16ec98c9d43129f03d76aee18b763.bindPopup(popup_39fa63f4fa614a8da4caf83d7864a2ba);
+
+            
+        
+    
+
+            var marker_87cb99b6bae1431ab373f874202aeef2 = L.marker(
+                [47.4706720614,-122.131012669],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_aedd960b551f4455a0737b9180ee7d5b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_87cb99b6bae1431ab373f874202aeef2.setIcon(icon_aedd960b551f4455a0737b9180ee7d5b);
+            
+    
+            var popup_8ede289e0686498cb42dadcec4b79cea = L.popup({maxWidth: '300'});
+
+            
+                var html_80a50ca4b83a4affa03968781153f19c = $('<div id="html_80a50ca4b83a4affa03968781153f19c" style="width: 100.0%; height: 100.0%;">Droneable Customer 27.  Weight: 5.0.</div>')[0];
+                popup_8ede289e0686498cb42dadcec4b79cea.setContent(html_80a50ca4b83a4affa03968781153f19c);
+            
+
+            marker_87cb99b6bae1431ab373f874202aeef2.bindPopup(popup_8ede289e0686498cb42dadcec4b79cea);
+
+            
+        
+    
+
+            var marker_f7bc289892904442a511a2709ac30d9b = L.marker(
+                [47.6519822783,-122.336194547],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_a58c08ed5741437d9edb6952b50ea288 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f7bc289892904442a511a2709ac30d9b.setIcon(icon_a58c08ed5741437d9edb6952b50ea288);
+            
+    
+            var popup_977e704ee49a4832a747149877eb7fbe = L.popup({maxWidth: '300'});
+
+            
+                var html_865b7e0563b2401d81a6c036417743a4 = $('<div id="html_865b7e0563b2401d81a6c036417743a4" style="width: 100.0%; height: 100.0%;">Droneable Customer 28.  Weight: 1.0.</div>')[0];
+                popup_977e704ee49a4832a747149877eb7fbe.setContent(html_865b7e0563b2401d81a6c036417743a4);
+            
+
+            marker_f7bc289892904442a511a2709ac30d9b.bindPopup(popup_977e704ee49a4832a747149877eb7fbe);
+
+            
+        
+    
+
+            var marker_4cdf8d23cd6c4d688e37713b4e7caeae = L.marker(
+                [47.5309811418,-122.328837225],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_64270b8addff4ef6833913a4e8fafdf9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4cdf8d23cd6c4d688e37713b4e7caeae.setIcon(icon_64270b8addff4ef6833913a4e8fafdf9);
+            
+    
+            var popup_76a69bc45d784315acd9f682f8358985 = L.popup({maxWidth: '300'});
+
+            
+                var html_4d604033efd445ec978c9b03beba15b9 = $('<div id="html_4d604033efd445ec978c9b03beba15b9" style="width: 100.0%; height: 100.0%;">Droneable Customer 29.  Weight: 3.0.</div>')[0];
+                popup_76a69bc45d784315acd9f682f8358985.setContent(html_4d604033efd445ec978c9b03beba15b9);
+            
+
+            marker_4cdf8d23cd6c4d688e37713b4e7caeae.bindPopup(popup_76a69bc45d784315acd9f682f8358985);
+
+            
+        
+    
+
+            var marker_1800ddc964ca460692f7c1e6156664b2 = L.marker(
+                [47.6349469637,-122.189388747],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_59a777f5d0474f9685efac4b812b8726 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1800ddc964ca460692f7c1e6156664b2.setIcon(icon_59a777f5d0474f9685efac4b812b8726);
+            
+    
+            var popup_2c427e5d4c4045a2ad5268f9739dedaa = L.popup({maxWidth: '300'});
+
+            
+                var html_5b8daa2b2f5d4a6a877af017affb61d4 = $('<div id="html_5b8daa2b2f5d4a6a877af017affb61d4" style="width: 100.0%; height: 100.0%;">Truck-only Customer 30.  Weight: 100.0.</div>')[0];
+                popup_2c427e5d4c4045a2ad5268f9739dedaa.setContent(html_5b8daa2b2f5d4a6a877af017affb61d4);
+            
+
+            marker_1800ddc964ca460692f7c1e6156664b2.bindPopup(popup_2c427e5d4c4045a2ad5268f9739dedaa);
+
+            
+        
+    
+
+            var marker_97154d92e28940949e55dc30de714722 = L.marker(
+                [47.6707659583,-122.318347829],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_c5dbce697abb401194f49b2a2262b15b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_97154d92e28940949e55dc30de714722.setIcon(icon_c5dbce697abb401194f49b2a2262b15b);
+            
+    
+            var popup_7ebc3a92d4c041109747a856184ca97f = L.popup({maxWidth: '300'});
+
+            
+                var html_c4ce49f015094e7b83997724f109270c = $('<div id="html_c4ce49f015094e7b83997724f109270c" style="width: 100.0%; height: 100.0%;">Droneable Customer 31.  Weight: 4.0.</div>')[0];
+                popup_7ebc3a92d4c041109747a856184ca97f.setContent(html_c4ce49f015094e7b83997724f109270c);
+            
+
+            marker_97154d92e28940949e55dc30de714722.bindPopup(popup_7ebc3a92d4c041109747a856184ca97f);
+
+            
+        
+    
+
+            var marker_89122fee1eda4b0689c0d8c3a76abe4f = L.marker(
+                [47.6553998259,-122.301458194],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_af50c7bca6774d38b7330662c9c7fe6e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_89122fee1eda4b0689c0d8c3a76abe4f.setIcon(icon_af50c7bca6774d38b7330662c9c7fe6e);
+            
+    
+            var popup_dd3e83b23c2b4ed2b730d89f415f0643 = L.popup({maxWidth: '300'});
+
+            
+                var html_2ea07617b1dc4fe2b0a3cddbe7772525 = $('<div id="html_2ea07617b1dc4fe2b0a3cddbe7772525" style="width: 100.0%; height: 100.0%;">Droneable Customer 32.  Weight: 5.0.</div>')[0];
+                popup_dd3e83b23c2b4ed2b730d89f415f0643.setContent(html_2ea07617b1dc4fe2b0a3cddbe7772525);
+            
+
+            marker_89122fee1eda4b0689c0d8c3a76abe4f.bindPopup(popup_dd3e83b23c2b4ed2b730d89f415f0643);
+
+            
+        
+    
+
+            var marker_27ecb7accc3c4f77bf2313d22fcc9c18 = L.marker(
+                [47.5634989208,-122.219070602],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_55070603b88546669f41a4e3b30c573b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_27ecb7accc3c4f77bf2313d22fcc9c18.setIcon(icon_55070603b88546669f41a4e3b30c573b);
+            
+    
+            var popup_7a790761d6b44f51b93cda19734a4e82 = L.popup({maxWidth: '300'});
+
+            
+                var html_d31389db8ff84445953e4c151087080a = $('<div id="html_d31389db8ff84445953e4c151087080a" style="width: 100.0%; height: 100.0%;">Droneable Customer 33.  Weight: 3.0.</div>')[0];
+                popup_7a790761d6b44f51b93cda19734a4e82.setContent(html_d31389db8ff84445953e4c151087080a);
+            
+
+            marker_27ecb7accc3c4f77bf2313d22fcc9c18.bindPopup(popup_7a790761d6b44f51b93cda19734a4e82);
+
+            
+        
+    
+
+            var marker_bb9a2d21382f49519b6ed62e1866fc22 = L.marker(
+                [47.6091653125,-122.185197005],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_39f414177c7f4c3d863dc55dedd7829a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bb9a2d21382f49519b6ed62e1866fc22.setIcon(icon_39f414177c7f4c3d863dc55dedd7829a);
+            
+    
+            var popup_04d0e95f06024d77a88a21e311c1fb08 = L.popup({maxWidth: '300'});
+
+            
+                var html_c9dcff96c62644349ed2177ba6cc9b3f = $('<div id="html_c9dcff96c62644349ed2177ba6cc9b3f" style="width: 100.0%; height: 100.0%;">Droneable Customer 34.  Weight: 5.0.</div>')[0];
+                popup_04d0e95f06024d77a88a21e311c1fb08.setContent(html_c9dcff96c62644349ed2177ba6cc9b3f);
+            
+
+            marker_bb9a2d21382f49519b6ed62e1866fc22.bindPopup(popup_04d0e95f06024d77a88a21e311c1fb08);
+
+            
+        
+    
+
+            var marker_54d63dba98ba438f9be1bca3e5b9e4ad = L.marker(
+                [47.5480043242,-122.15067454],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_19b0bc4f41c6445299890b139c05173c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_54d63dba98ba438f9be1bca3e5b9e4ad.setIcon(icon_19b0bc4f41c6445299890b139c05173c);
+            
+    
+            var popup_5100570ed4214b81a806cb7afa08673f = L.popup({maxWidth: '300'});
+
+            
+                var html_36bced5dc9764fdba3a6ad7366a29385 = $('<div id="html_36bced5dc9764fdba3a6ad7366a29385" style="width: 100.0%; height: 100.0%;">Droneable Customer 35.  Weight: 2.0.</div>')[0];
+                popup_5100570ed4214b81a806cb7afa08673f.setContent(html_36bced5dc9764fdba3a6ad7366a29385);
+            
+
+            marker_54d63dba98ba438f9be1bca3e5b9e4ad.bindPopup(popup_5100570ed4214b81a806cb7afa08673f);
+
+            
+        
+    
+
+            var marker_588ef9e821df4f9183e92f082a7a401c = L.marker(
+                [47.5440921007,-122.309158745],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_b9f972deeab546d5bd4e51e94285e358 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_588ef9e821df4f9183e92f082a7a401c.setIcon(icon_b9f972deeab546d5bd4e51e94285e358);
+            
+    
+            var popup_92c98bfb71834ecda8c1521978e8f2a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_c717199640ed44369312252737c00dd8 = $('<div id="html_c717199640ed44369312252737c00dd8" style="width: 100.0%; height: 100.0%;">Droneable Customer 36.  Weight: 2.0.</div>')[0];
+                popup_92c98bfb71834ecda8c1521978e8f2a3.setContent(html_c717199640ed44369312252737c00dd8);
+            
+
+            marker_588ef9e821df4f9183e92f082a7a401c.bindPopup(popup_92c98bfb71834ecda8c1521978e8f2a3);
+
+            
+        
+    
+
+            var marker_ff54059ce53541eb9d3c944ea382feb4 = L.marker(
+                [47.6567009379,-122.330603321],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_52f1b76e4f7d4fc2b82d110dc2c1b70f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff54059ce53541eb9d3c944ea382feb4.setIcon(icon_52f1b76e4f7d4fc2b82d110dc2c1b70f);
+            
+    
+            var popup_ab1ddb3ddf384c16a752f942ffa32ae9 = L.popup({maxWidth: '300'});
+
+            
+                var html_78bf591b998e47c7a9feb516d8d9e453 = $('<div id="html_78bf591b998e47c7a9feb516d8d9e453" style="width: 100.0%; height: 100.0%;">Truck-only Customer 37.  Weight: 100.0.</div>')[0];
+                popup_ab1ddb3ddf384c16a752f942ffa32ae9.setContent(html_78bf591b998e47c7a9feb516d8d9e453);
+            
+
+            marker_ff54059ce53541eb9d3c944ea382feb4.bindPopup(popup_ab1ddb3ddf384c16a752f942ffa32ae9);
+
+            
+        
+    
+
+            var marker_3d40beadf0fa44febb6797d3d2d2fb58 = L.marker(
+                [47.6695789503,-122.304727064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_7c6067d1f2f64ae984f7ee2467723de5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3d40beadf0fa44febb6797d3d2d2fb58.setIcon(icon_7c6067d1f2f64ae984f7ee2467723de5);
+            
+    
+            var popup_e051600621004217bd758a14e7c4245b = L.popup({maxWidth: '300'});
+
+            
+                var html_f5348cc388194d87a54e3652eac95add = $('<div id="html_f5348cc388194d87a54e3652eac95add" style="width: 100.0%; height: 100.0%;">Droneable Customer 38.  Weight: 2.0.</div>')[0];
+                popup_e051600621004217bd758a14e7c4245b.setContent(html_f5348cc388194d87a54e3652eac95add);
+            
+
+            marker_3d40beadf0fa44febb6797d3d2d2fb58.bindPopup(popup_e051600621004217bd758a14e7c4245b);
+
+            
+        
+    
+
+            var marker_a0cf835ee28f40f5b9eb704992443d5d = L.marker(
+                [47.5186575935,-122.320345447],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_2dbcfc74d93f44cfafef22ec8279eebb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0cf835ee28f40f5b9eb704992443d5d.setIcon(icon_2dbcfc74d93f44cfafef22ec8279eebb);
+            
+    
+            var popup_318f620a310f4d95be140a256b4228a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_79783cf461394dc68540a5eb8933956d = $('<div id="html_79783cf461394dc68540a5eb8933956d" style="width: 100.0%; height: 100.0%;">Droneable Customer 39.  Weight: 5.0.</div>')[0];
+                popup_318f620a310f4d95be140a256b4228a7.setContent(html_79783cf461394dc68540a5eb8933956d);
+            
+
+            marker_a0cf835ee28f40f5b9eb704992443d5d.bindPopup(popup_318f620a310f4d95be140a256b4228a7);
+
+            
+        
+    
+
+            var marker_cba1eaaa209f41d18a844435433ff00c = L.marker(
+                [47.5116650049,-122.338096385],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_9bb393f083824ab78cb5f2d37525b97c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cba1eaaa209f41d18a844435433ff00c.setIcon(icon_9bb393f083824ab78cb5f2d37525b97c);
+            
+    
+            var popup_bb681e9bf3bf4da28242e53be54459ba = L.popup({maxWidth: '300'});
+
+            
+                var html_6edf00d270174c69a040116ffb72db9a = $('<div id="html_6edf00d270174c69a040116ffb72db9a" style="width: 100.0%; height: 100.0%;">Droneable Customer 40.  Weight: 3.0.</div>')[0];
+                popup_bb681e9bf3bf4da28242e53be54459ba.setContent(html_6edf00d270174c69a040116ffb72db9a);
+            
+
+            marker_cba1eaaa209f41d18a844435433ff00c.bindPopup(popup_bb681e9bf3bf4da28242e53be54459ba);
+
+            
+        
+    
+
+            var marker_6276fe4f5b734d5493bae971e3316925 = L.marker(
+                [47.5390793813,-122.291750228],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_a30136e3e20f46bea9fe6e03c1f43fc6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6276fe4f5b734d5493bae971e3316925.setIcon(icon_a30136e3e20f46bea9fe6e03c1f43fc6);
+            
+    
+            var popup_e9e35457cf5a41e0839c6f78e0d35ea0 = L.popup({maxWidth: '300'});
+
+            
+                var html_69ec274fb9654b95bc1b5115d0325534 = $('<div id="html_69ec274fb9654b95bc1b5115d0325534" style="width: 100.0%; height: 100.0%;">Droneable Customer 41.  Weight: 4.0.</div>')[0];
+                popup_e9e35457cf5a41e0839c6f78e0d35ea0.setContent(html_69ec274fb9654b95bc1b5115d0325534);
+            
+
+            marker_6276fe4f5b734d5493bae971e3316925.bindPopup(popup_e9e35457cf5a41e0839c6f78e0d35ea0);
+
+            
+        
+    
+
+            var marker_c8600a108c724fabb85e8b17f20ae5a1 = L.marker(
+                [47.5475062619,-122.108188603],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_b77d58d67b3746febe6c985cec529d52 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c8600a108c724fabb85e8b17f20ae5a1.setIcon(icon_b77d58d67b3746febe6c985cec529d52);
+            
+    
+            var popup_2487ea163cd0464ca67fe4b6e7ba1b06 = L.popup({maxWidth: '300'});
+
+            
+                var html_f44537e7bcc347908ecdac3421134d42 = $('<div id="html_f44537e7bcc347908ecdac3421134d42" style="width: 100.0%; height: 100.0%;">Droneable Customer 42.  Weight: 5.0.</div>')[0];
+                popup_2487ea163cd0464ca67fe4b6e7ba1b06.setContent(html_f44537e7bcc347908ecdac3421134d42);
+            
+
+            marker_c8600a108c724fabb85e8b17f20ae5a1.bindPopup(popup_2487ea163cd0464ca67fe4b6e7ba1b06);
+
+            
+        
+    
+
+            var marker_ae967aac10cf4955a02749ee36c6056c = L.marker(
+                [47.6361639185,-122.137017275],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_4ce009cf021e45d2a6f93caa01ced665 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ae967aac10cf4955a02749ee36c6056c.setIcon(icon_4ce009cf021e45d2a6f93caa01ced665);
+            
+    
+            var popup_a7818d9c24ec433a8d5f050434354d51 = L.popup({maxWidth: '300'});
+
+            
+                var html_785c2de0ec414bf396f85877b05943f7 = $('<div id="html_785c2de0ec414bf396f85877b05943f7" style="width: 100.0%; height: 100.0%;">Droneable Customer 43.  Weight: 5.0.</div>')[0];
+                popup_a7818d9c24ec433a8d5f050434354d51.setContent(html_785c2de0ec414bf396f85877b05943f7);
+            
+
+            marker_ae967aac10cf4955a02749ee36c6056c.bindPopup(popup_a7818d9c24ec433a8d5f050434354d51);
+
+            
+        
+    
+
+            var marker_101c3a4175f949d490fb091bfed9c998 = L.marker(
+                [47.6279681821,-122.351728807],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_026fc241c71340888827d6bf71675a70 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_101c3a4175f949d490fb091bfed9c998.setIcon(icon_026fc241c71340888827d6bf71675a70);
+            
+    
+            var popup_fd9339e4b7384ed8969c28c20c14d075 = L.popup({maxWidth: '300'});
+
+            
+                var html_4a44018e980d43999c61c58fd1f7b919 = $('<div id="html_4a44018e980d43999c61c58fd1f7b919" style="width: 100.0%; height: 100.0%;">Droneable Customer 44.  Weight: 5.0.</div>')[0];
+                popup_fd9339e4b7384ed8969c28c20c14d075.setContent(html_4a44018e980d43999c61c58fd1f7b919);
+            
+
+            marker_101c3a4175f949d490fb091bfed9c998.bindPopup(popup_fd9339e4b7384ed8969c28c20c14d075);
+
+            
+        
+    
+
+            var marker_ded534aecba2495eaaab656740800a27 = L.marker(
+                [47.7007131518,-122.124078527],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_cb7a9db08589468481baaadb083ea631 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ded534aecba2495eaaab656740800a27.setIcon(icon_cb7a9db08589468481baaadb083ea631);
+            
+    
+            var popup_14ea4e1f15704bf7914c430543cd0627 = L.popup({maxWidth: '300'});
+
+            
+                var html_fa71fa78fdfe4f93b6f37bb9c6f53e8f = $('<div id="html_fa71fa78fdfe4f93b6f37bb9c6f53e8f" style="width: 100.0%; height: 100.0%;">Droneable Customer 45.  Weight: 4.0.</div>')[0];
+                popup_14ea4e1f15704bf7914c430543cd0627.setContent(html_fa71fa78fdfe4f93b6f37bb9c6f53e8f);
+            
+
+            marker_ded534aecba2495eaaab656740800a27.bindPopup(popup_14ea4e1f15704bf7914c430543cd0627);
+
+            
+        
+    
+
+            var marker_8c3c0967fa154baeaf83fbcd9cac70a1 = L.marker(
+                [47.4691693792,-122.135919218],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_ed4811d01c574212a4d2bb923b65b4c8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8c3c0967fa154baeaf83fbcd9cac70a1.setIcon(icon_ed4811d01c574212a4d2bb923b65b4c8);
+            
+    
+            var popup_57b204269a31481591c9d64b7608e3a4 = L.popup({maxWidth: '300'});
+
+            
+                var html_4255ca7db8b84c15b09390669f9f4d0d = $('<div id="html_4255ca7db8b84c15b09390669f9f4d0d" style="width: 100.0%; height: 100.0%;">Droneable Customer 46.  Weight: 3.0.</div>')[0];
+                popup_57b204269a31481591c9d64b7608e3a4.setContent(html_4255ca7db8b84c15b09390669f9f4d0d);
+            
+
+            marker_8c3c0967fa154baeaf83fbcd9cac70a1.bindPopup(popup_57b204269a31481591c9d64b7608e3a4);
+
+            
+        
+    
+
+            var marker_39f8fe3be7d24da1b752aefff1c21ff3 = L.marker(
+                [47.6849085115,-122.257492223],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_15dc455f9aef426490fc7d5d8204589c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_39f8fe3be7d24da1b752aefff1c21ff3.setIcon(icon_15dc455f9aef426490fc7d5d8204589c);
+            
+    
+            var popup_1d47bf62a4de45acaec2ead92ee7d9a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_8b836fc12d9c440d97356e01539d3c8f = $('<div id="html_8b836fc12d9c440d97356e01539d3c8f" style="width: 100.0%; height: 100.0%;">Truck-only Customer 47.  Weight: 100.0.</div>')[0];
+                popup_1d47bf62a4de45acaec2ead92ee7d9a8.setContent(html_8b836fc12d9c440d97356e01539d3c8f);
+            
+
+            marker_39f8fe3be7d24da1b752aefff1c21ff3.bindPopup(popup_1d47bf62a4de45acaec2ead92ee7d9a8);
+
+            
+        
+    
+
+            var marker_4d6512f5301e4bc1892403d007846855 = L.marker(
+                [47.5806378681,-122.149339051],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_9c7153af6b864de3b8e646139fbdd28d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d6512f5301e4bc1892403d007846855.setIcon(icon_9c7153af6b864de3b8e646139fbdd28d);
+            
+    
+            var popup_5cb2601008ae435eaf5f73c1ab3a25a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_a75d50a3fad246b99bd56af030fefe57 = $('<div id="html_a75d50a3fad246b99bd56af030fefe57" style="width: 100.0%; height: 100.0%;">Droneable Customer 48.  Weight: 3.0.</div>')[0];
+                popup_5cb2601008ae435eaf5f73c1ab3a25a1.setContent(html_a75d50a3fad246b99bd56af030fefe57);
+            
+
+            marker_4d6512f5301e4bc1892403d007846855.bindPopup(popup_5cb2601008ae435eaf5f73c1ab3a25a1);
+
+            
+        
+    
+
+            var marker_f9403a9e333e4cafa743c922aeac8345 = L.marker(
+                [47.6313093358,-122.361505339],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_7b491dc212fb4cc7b249d6f7f8aa259a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f9403a9e333e4cafa743c922aeac8345.setIcon(icon_7b491dc212fb4cc7b249d6f7f8aa259a);
+            
+    
+            var popup_05f2cac703b549c4bdd93361e46d109d = L.popup({maxWidth: '300'});
+
+            
+                var html_6dff1952d8ba412e87f01ddd876a8668 = $('<div id="html_6dff1952d8ba412e87f01ddd876a8668" style="width: 100.0%; height: 100.0%;">Droneable Customer 49.  Weight: 5.0.</div>')[0];
+                popup_05f2cac703b549c4bdd93361e46d109d.setContent(html_6dff1952d8ba412e87f01ddd876a8668);
+            
+
+            marker_f9403a9e333e4cafa743c922aeac8345.bindPopup(popup_05f2cac703b549c4bdd93361e46d109d);
+
+            
+        
+    
+
+            var marker_0eb98ce747de4bbfa796bb79b2b81cc3 = L.marker(
+                [47.5744712237,-122.126485943],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f9b5b218c0be4709ab43a0f2be9aef4f);
+            
+    
+
+                var icon_21bff54d166e4a44a70f6fffd562b58c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0eb98ce747de4bbfa796bb79b2b81cc3.setIcon(icon_21bff54d166e4a44a70f6fffd562b58c);
+            
+    
+            var popup_d15aec83d90d496ab851ccf92e09983e = L.popup({maxWidth: '300'});
+
+            
+                var html_eb58d02697484933be99d5d471aae592 = $('<div id="html_eb58d02697484933be99d5d471aae592" style="width: 100.0%; height: 100.0%;">Droneable Customer 50.  Weight: 4.0.</div>')[0];
+                popup_d15aec83d90d496ab851ccf92e09983e.setContent(html_eb58d02697484933be99d5d471aae592);
+            
+
+            marker_0eb98ce747de4bbfa796bb79b2b81cc3.bindPopup(popup_d15aec83d90d496ab851ccf92e09983e);
+
+            
+        
+</script>
