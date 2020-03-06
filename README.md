@@ -5,8 +5,14 @@ This repository provides a collection of test problems, as well as the soucre co
 The repository accompanies the following paper, which is currently under review:
 > R. Raj and C. Murray. Fly slower, deliver faster: The multiple flying sidekicks traveling salesman problem with variable drone speeds. Available at SSRN: _______________________________________________
 
-The paper provides details on the mFSTSP-VDS definition, and a heuristic as a solution approach. This paper is an extension to the following paper:
-> C. Murray and R. Raj, The Multiple Flying Sidekicks Traveling Salesman Problem: Parcel Delivery with Multiple Drones (July 27, 2019). Available at SSRN: https://ssrn.com/abstract=3338436 or http://dx.doi.org/10.2139/ssrn.3338436
+The paper provides details on the mFSTSP-VDS definition, and a heuristic as a solution approach. 
+
+--- 
+
+This paper is an extension of:
+> C. C. Murray and R. Raj (2020), The multiple flying sidekicks traveling salesman problem: Parcel delivery with multiple drones, Transportation Research Part C: Emerging Technologies, Volume 110, Pages 368-398.  Available for free download at SSRN: https://ssrn.com/abstract=3338436, or https://www.sciencedirect.com/science/article/pii/S0968090X19302505
+
+- Visit https://github.com/optimatorlab/mFSTSP for test problems, solutions, and heuristic source code for the mFSTSP.
 
 ---- 
 
