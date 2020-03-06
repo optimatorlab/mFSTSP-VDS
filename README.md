@@ -10,7 +10,11 @@ The paper provides details on the mFSTSP-VDS definition, and a heuristic as a so
 --- 
 
 This paper is an extension of:
-> C. C. Murray and R. Raj (2020), The multiple flying sidekicks traveling salesman problem: Parcel delivery with multiple drones, Transportation Research Part C: Emerging Technologies, Volume 110, Pages 368-398.  Available for free download at SSRN: https://ssrn.com/abstract=3338436, or https://www.sciencedirect.com/science/article/pii/S0968090X19302505
+> C. C. Murray and R. Raj (2020), The multiple flying sidekicks traveling salesman problem: Parcel delivery with multiple drones, Transportation Research Part C: Emerging Technologies, Volume 110, Pages 368-398.  
+
+- The mFSTSP paper is available at:
+    - https://ssrn.com/abstract=3338436 (free download from SSRN), or
+    - https://www.sciencedirect.com/science/article/pii/S0968090X19302505 (published paper)
 
 - Visit https://github.com/optimatorlab/mFSTSP for test problems, solutions, and heuristic source code for the mFSTSP.
 
