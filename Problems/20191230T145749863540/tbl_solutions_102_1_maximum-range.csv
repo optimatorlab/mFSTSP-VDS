@@ -1,0 +1,39 @@
+problemName,vehicleFileID,UAVSpeedType,numUAVs,numTrucks
+20191230T145749863540,102,maximum-range,1,-1
+
+Objective Function Value: 6074.581676 
+
+Assignments: 
+vehicleID,vehicleType,activityType,startTime,startNode,endTime,endNode,Description,Status
+1.0,Truck,Truck travels with UAV(s) on board,0.0,0.0,431.153254,10.0,Travel from node 0 to node 10,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,431.153254,10.0,461.153254,10.0,Dropping off package to Customer 10,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,461.153254,10.0,715.615375,3.0,Travel from node 10 to node 3,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,715.615375,3.0,745.615375,3.0,Dropping off package to Customer 3,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,745.615375,3.0,863.242229,8.0,Travel from node 3 to node 8,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,863.242229,8.0,893.242229,8.0,Dropping off package to Customer 8,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,893.242229,8.0,1518.445282,9.0,Travel from node 8 to node 9,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,1518.445282,9.0,1548.445282,9.0,Dropping off package to Customer 9,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,1548.445282,9.0,1740.458306,4.0,Travel from node 9 to node 4,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,1740.458306,4.0,1770.458306,4.0,Dropping off package to Customer 4,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,1770.458306,4.0,2270.954962,5.0,Travel from node 4 to node 5,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,2270.954962,5.0,2300.954962,5.0,Dropping off package to Customer 5,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,2300.954962,5.0,2633.274333,2.0,Travel from node 5 to node 2,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,2633.274333,2.0,2663.274333,2.0,Dropping off package to Customer 2,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,2663.274333,2.0,3758.978837,7.0,Travel from node 2 to node 7,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,3758.978837,7.0,3788.978837,7.0,Dropping off package to Customer 7,Making Delivery
+1.0,Truck,Truck is stationary with UAV(s) on board,3788.978837,7.0,3848.978837,7.0,Launching UAV 2,UAV Launch
+1.0,Truck,Truck travels with no UAVs on board,3848.978837,7.0,5066.415661,6.0,Travel from node 7 to node 6,Traveling
+1.0,Truck,Truck is stationary with no UAVs on board,5066.415661,6.0,5096.415661,6.0,Dropping off package to Customer 6,Making Delivery
+1.0,Truck,Truck travels with no UAVs on board,5096.415661,6.0,6044.581676,11.0,Travel from node 6 to node 11,Traveling
+1.0,Truck,Truck is stationary with no UAVs on board,6044.581676,11.0,6074.581676,11.0,Retrieving UAV 2,UAV Recovery
+1.0,Truck,Truck is stationary with no UAVs on board,6074.581676,11.0,-1.0,11.0,At the Depot.  Total Time = 1:41:14,Vehicle Tasks Complete
+2.0,UAV,UAV is stationary with a parcel,3788.978837,7.0,3848.978837,7.0,Prepare to launch from truck,UAV Launch
+2.0,UAV,UAV taking off or landing with a parcel,3848.978837,7.0,3854.478837,7.0,Takeoff from truck at Customer 7,Traveling
+2.0,UAV,UAV travels with parcel,3854.478837,7.0,4031.56009842,1.0,Fly to UAV customer 1,Traveling
+2.0,UAV,UAV taking off or landing with a parcel,4031.56009842,1.0,4041.56009842,1.0,Land at UAV customer 1,Traveling
+2.0,UAV,UAV is stationary with a parcel,4041.56009842,1.0,4101.56009842,1.0,Serving UAV customer 1,Making Delivery
+2.0,UAV,UAV taking off or landing with no parcels,4101.56009842,1.0,4107.06009842,1.0,Takeoff from UAV customer 1,Traveling
+2.0,UAV,UAV travels empty,4107.06009842,1.0,5030.8459082,11.0,Fly to depot,Traveling
+2.0,UAV,UAV is stationary without a parcel,5030.8459082,11.0,6034.581676,11.0,Idle above depot location,Idle
+2.0,UAV,UAV taking off or landing with no parcels,6034.581676,11.0,6044.581676,11.0,Land at depot,Traveling
+2.0,UAV,UAV is stationary without a parcel,6044.581676,11.0,6074.581676,11.0,Recovered at depot,UAV Recovery

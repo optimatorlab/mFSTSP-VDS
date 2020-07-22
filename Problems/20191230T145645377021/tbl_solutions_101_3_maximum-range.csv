@@ -1,0 +1,39 @@
+problemName,vehicleFileID,UAVSpeedType,numUAVs,numTrucks
+20191230T145645377021,101,maximum-range,3,-1
+
+Objective Function Value: 5413.432455 
+
+Assignments: 
+vehicleID,vehicleType,activityType,startTime,startNode,endTime,endNode,Description,Status
+1.0,Truck,Truck travels with UAV(s) on board,0.0,0.0,440.468675,3.0,Travel from node 0 to node 3,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,440.468675,3.0,470.468675,3.0,Dropping off package to Customer 3,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,470.468675,3.0,611.992627,5.0,Travel from node 3 to node 5,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,611.992627,5.0,641.992627,5.0,Dropping off package to Customer 5,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,641.992627,5.0,773.550121,9.0,Travel from node 5 to node 9,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,773.550121,9.0,803.550121,9.0,Dropping off package to Customer 9,Making Delivery
+1.0,Truck,Truck is stationary with UAV(s) on board,803.550121,9.0,863.550121,9.0,Launching UAV 2,UAV Launch
+1.0,Truck,Truck travels with UAV(s) on board,863.550121,9.0,1361.463162,4.0,Travel from node 9 to node 4,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,1361.463162,4.0,1391.463162,4.0,Dropping off package to Customer 4,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,1391.463162,4.0,1750.781782,2.0,Travel from node 4 to node 2,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,1750.781782,2.0,1780.781782,2.0,Dropping off package to Customer 2,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,1780.781782,2.0,2131.483519,7.0,Travel from node 2 to node 7,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,2131.483519,7.0,2161.483519,7.0,Dropping off package to Customer 7,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,2161.483519,7.0,3397.449495,1.0,Travel from node 7 to node 1,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,3397.449495,1.0,3427.449495,1.0,Retrieving UAV 2,UAV Recovery
+1.0,Truck,Truck is stationary with UAV(s) on board,3427.449495,1.0,3457.449495,1.0,Dropping off package to Customer 1,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,3457.449495,1.0,4400.653661,10.0,Travel from node 1 to node 10,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,4400.653661,10.0,4430.653661,10.0,Dropping off package to Customer 10,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,4430.653661,10.0,5218.397143,8.0,Travel from node 10 to node 8,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,5218.397143,8.0,5248.397143,8.0,Dropping off package to Customer 8,Making Delivery
+1.0,Truck,Truck travels with UAV(s) on board,5248.397143,8.0,5413.432455,11.0,Travel from node 8 to node 11,Traveling
+1.0,Truck,Truck is stationary with UAV(s) on board,5413.432455,11.0,-1.0,11.0,At the Depot.  Total Time = 1:30:13,Vehicle Tasks Complete
+2.0,UAV,UAV is stationary with a parcel,803.550121,9.0,863.550121,9.0,Prepare to launch from truck,UAV Launch
+2.0,UAV,UAV taking off or landing with a parcel,863.550121,9.0,869.050121,9.0,Takeoff from truck at Customer 9,Traveling
+2.0,UAV,UAV travels with parcel,869.050121,9.0,1803.36247106,6.0,Fly to UAV customer 6,Traveling
+2.0,UAV,UAV taking off or landing with a parcel,1803.36247106,6.0,1813.36247106,6.0,Land at UAV customer 6,Traveling
+2.0,UAV,UAV is stationary with a parcel,1813.36247106,6.0,1873.36247106,6.0,Serving UAV customer 6,Making Delivery
+2.0,UAV,UAV taking off or landing with no parcels,1873.36247106,6.0,1878.86247106,6.0,Takeoff from UAV customer 6,Traveling
+2.0,UAV,UAV travels empty,1878.86247106,6.0,3351.64203545,1.0,Fly to truck at customer 1,Traveling
+2.0,UAV,UAV is stationary without a parcel,3351.64203545,1.0,3387.449495,1.0,Idle above rendezvous location (customer 1),Idle
+2.0,UAV,UAV taking off or landing with no parcels,3387.449495,1.0,3397.449495,1.0,Land at truck rendezvous location (customer 1),Traveling
+2.0,UAV,UAV is stationary without a parcel,3397.449495,1.0,3427.449495,1.0,Recovered by truck at customer 1,UAV Recovery
