@@ -7,7 +7,7 @@ The repository accompanies the following paper, which is currently under its sec
 
 The paper provides details on the mFSTSP-VDS definition, and a heuristic as a solution approach. The figure below is the visual representation of the solution of an mFSTSP-VDS instance:
 
-![](https://github.com/optimatorlab/mFSTSP_speed/blob/master/Images/mFSTSPVDS3UAV.PNG | width=100) 
+<img src="https://github.com/optimatorlab/mFSTSP_speed/blob/master/Images/mFSTSPVDS3UAV.PNG" width="100" height="100"> 
 
 --- 
 
