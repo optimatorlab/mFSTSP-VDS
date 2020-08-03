@@ -10,7 +10,8 @@ The paper provides details on the mFSTSP-VDS definition, and a heuristic as a so
 <p align="center">
    <img src="https://github.com/optimatorlab/mFSTSP_speed/blob/master/Images/mFSTSPVDS3UAV.PNG" width="350"> 
 </p>
---- 
+
+---- 
 
 This paper is an extension of:
 > C. C. Murray and R. Raj (2020), The multiple flying sidekicks traveling salesman problem: Parcel delivery with multiple drones, Transportation Research Part C: Emerging Technologies, Volume 110, Pages 368-398.  
